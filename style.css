@@ -9,10 +9,11 @@ body{
     color: white;
     background: url(images/1.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 .container{
-    width: 80%;
+    width: 95%;
     margin: auto;
     text-align: center;
     padding-bottom:30px;
@@ -22,7 +23,7 @@ body{
 }
 .container .inputs-box {
     width: 100%;
-    padding: 10px 0;
+    padding: 12px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +47,7 @@ body{
     cursor: pointer;
 }
 .btn:active{
-transform: scale(0.9);
+transform: scale(1.03);
 }
 .btn:hover{
 background: rgb(160, 106, 6);
@@ -57,7 +58,7 @@ letter-spacing: 1px;
     text-align: center;
 }
 .container .inputs-box input:focus{
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 .delete-all{
     width: 100%;
@@ -135,11 +136,12 @@ tfoot tr:nth-child(2) td{
 }
 .btn-scroll{
     position: fixed;
-    top: 82%;
+    top: 86%;
     left: 2%;
     cursor: pointer;
     transition: 0.5s ease;
     opacity: 1;
+    
 }
 .btn-scroll.show{
     opacity: 1;
@@ -150,6 +152,7 @@ tfoot tr:nth-child(2) td{
    border-radius: 5px;
    margin: 5px 0;
    transition: 0.4s ease;
+   user-select: none;
 }
 .btn-scroll div:nth-child(1){
     background: maroon;
@@ -202,5 +205,10 @@ table{
     height: 50px; 
     border-bottom: 2px dashed orangered;
      
+}
+.btn-scroll{
+top: 80%;
+left: 95%;
+/* right: 3%; */
 }
 }
