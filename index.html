@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Save Your Books Would You Like To Buy it .Made By Ziad Ahmed">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://images.icon-icons.com/516/PNG/512/read_book_study_icon-icons.com_51077.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Book App</title>
+</head>
+<body>
+
+    <!--
+    1-parent element ok => container
+    _____________________________
+
+    2-div => inputs
+    -input for book name
+    -input for price  
+    _____________________________
+    3-tabel => [ data | images[select] | total ];   
+    
+    -->
+    <div class="container">
+        
+        <div class="header">
+        
+        <div class="title"><h1>Book App</h1></div>    
+        
+        <div class="inputs-box">
+            <input type="text" placeholder="Enter The Name Book ..." id="nameBook">
+            <input type="number" placeholder="Enter The Price ..." id="PriceBook">
+            <button onclick="addBook()"class="btn">Add</button>
+        </div>
+        
+        <div class="delete-all"></div>
+        
+        </div>
+        <!-- the table part -->
+        <table>
+        <!-- table => thead => tr => th -->
+        <!-- table => tbody + id => tr => td -->
+         <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>The Price</th>
+                <th>Delete</th>
+                <th>Updata</th>
+                <th>Number</th>
+            </tr>
+            
+         </thead>
+         <tbody id="parent">
+ 
+
+
+         </tbody>
+         <tfoot>
+            <tr>
+                <td colspan = "5">Total</td>
+            </tr>
+            <tr>
+                <td colspan = "5"><span id="total">000</span> <span>جنية</span></td>
+            </tr>
+         </tfoot>
+        </table>
+
+    </div>
+    
+    <div class="btn-scroll">
+        <div class="up-scroll" onclick="goUp()"><i class="fa-solid fa-arrow-up"></i></div>
+        <div class="down-scroll"onclick="scrollButton()"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

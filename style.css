@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+body{
+    height: 100vh;
+    color: white;
+    background: url(images/1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom:30px;
+}
+.container .title {
+    margin:20px 0;
+}
+.container .inputs-box {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container .inputs-box input,.btn{
+    flex-shrink: 0;
+    width: 100%;
+    padding:10px 0;
+    border-radius:4px;
+    border: 2px solid rgb(160, 106, 6);
+    outline: none;
+    font-weight: 600;
+    background: darkorange;
+    color: white;
+    transition: 0.4s ease;
+
+}
+.container .inputs-box .btn{
+    cursor: pointer;
+}
+.btn:active{
+transform: scale(0.9);
+}
+.btn:hover{
+background: rgb(160, 106, 6);
+letter-spacing: 1px;
+}
+.container .inputs-box input::placeholder{
+    color: white;
+    text-align: center;
+}
+.container .inputs-box input:focus{
+    transform: scale(0.9);
+}
+.delete-all{
+    width: 100%;
+    margin: 10px 0;
+}
+.delete-all  button{
+background: maroon;
+border: none;
+cursor: pointer;
+}
+.delete-all  button:hover{
+    background: red;
+}
+
+
+/* work in tabel */
+
+
+table{
+    width: 100%;
+    border: 1px solid orangered;
+    border-bottom: none;
+    outline: none;
+    border-radius: 5px;
+}
+ td , th{
+    height: 50px; 
+    border-bottom: 1px solid orangered;
+     
+}
+.nameBook{
+    width: 45%;
+    height: auto;
+    word-break: break-all;
+    overflow: auto;
+    cursor: pointer;
+    user-select: none;
+    background: none;
+}
+.nameBook.active{
+    background: green;
+    text-decoration: line-through;
+}
+tbody tr td button{
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    font-weight: 700;
+}
+tbody tr td button:hover,tbody tr td button:active{
+    transform: scale(1.05);
+    letter-spacing: 1px;
+}
+.delete-btn{
+    background: maroon;
+}
+.updata-btn{
+    background: green;
+}
+tfoot tr:nth-child(2){
+    background: maroon;
+}
+tfoot tr:nth-child(2) td , .price{
+    direction: rtl;
+
+}
+tfoot tr:nth-child(2) td{
+    border-radius: 5px;
+    border-bottom: none;
+}
+.btn-scroll{
+    position: fixed;
+    top: 82%;
+    left: 2%;
+    cursor: pointer;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.btn-scroll.show{
+    opacity: 1;
+}
+.btn-scroll div {
+    padding: 10px;
+   background: green;
+   border-radius: 5px;
+   margin: 5px 0;
+   transition: 0.4s ease;
+}
+.btn-scroll div:nth-child(1){
+    background: maroon;
+}
+.btn-scroll div:hover , .btn-scroll div :active{
+    background: darkorange;
+    transform: scale(1.1);
+    margin: 8px 0;
+}
+
+@media screen and (min-width : 850px) {
+ 
+.container .inputs-box {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container .inputs-box input,.btn{
+    width: 40%;
+    padding:17px 0;
+
+}
+.container .inputs-box input:focus{
+    transform: scale(1.1);
+    margin: 0 20px;
+}
+.container .inputs-box .btn{
+    width: 82%;
+}
+.container .inputs-box .btn:active{
+    transform: scale(1.1);
+}
+.container {
+ 
+    text-align: center;
+}
+table{
+    margin: auto;
+    width: 82%;
+    border: 2px dashed orangered;
+    border-bottom: none;
+    outline: none;
+    border-radius: 5px;
+}
+ td , th{
+    height: 50px; 
+    border-bottom: 2px dashed orangered;
+     
+}
+}
