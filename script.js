@@ -16,8 +16,6 @@ function addBook() {
 
     if(bookName.value !== ""  && isNaN(parseInt(bookName.value)) && priceBook.value !== "") {
 
-    
-
     let dataItem = {
         name : bookName.value,
         priceBook : priceBook.value,
@@ -71,6 +69,7 @@ function printData() {
       total.textContent = price;
       total.parentElement.style.background = "green";
     }else{
+      total.textContent = 0;
       total.parentElement.style.background = "maroon";
     }
 
