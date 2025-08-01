@@ -24,7 +24,7 @@ body{
 }
 .container .inputs-box {
     width: 100%;
-    padding: 12px 0;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
