@@ -6,6 +6,7 @@
 }
 body{
     height: 100vh;
+    overflow: auto;
     color: white;
     background: url(images/1.jpg) no-repeat;
     background-size: cover;
@@ -35,7 +36,7 @@ body{
     width: 100%;
     padding:10px 0;
     border-radius:4px;
-    border: 2px solid rgb(160, 106, 6);
+    border: 1px solid rgb(160, 106, 6);
     outline: none;
     font-weight: 600;
     background: darkorange;
@@ -58,7 +59,7 @@ letter-spacing: 1px;
     text-align: center;
 }
 .container .inputs-box input:focus{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 .delete-all{
     width: 100%;
@@ -83,6 +84,9 @@ table{
     border-bottom: none;
     outline: none;
     border-radius: 5px;
+}
+table thead tr th{
+    font-size: 15px;
 }
  td , th{
     height: 50px; 
@@ -133,6 +137,7 @@ tfoot tr:nth-child(2) td , .price{
 tfoot tr:nth-child(2) td{
     border-radius: 5px;
     border-bottom: none;
+    font-weight: bold;
 }
 .btn-scroll{
     position: fixed;
@@ -210,5 +215,8 @@ table{
 top: 80%;
 left: 95%;
 /* right: 3%; */
+}
+table thead tr th{
+    font-size: 17px;
 }
 }
